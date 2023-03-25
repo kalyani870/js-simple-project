@@ -8,12 +8,12 @@
             background-color: aqua;
         }
         .img-card-container{
-            background-color:white;
+            background-color:pink;
             width: auto;
-            height: auto;
+            height:600px;
             display: flex;
             margin: 0 auto;
-            box-shadow: 1px 1px 4px 3px rgb(83, 83, 83);
+            box-shadow: 1px 1px 5px 4px rgb(44, 43, 43);
             justify-content: space-around;
             margin-top: 20px;
             border-radius: 15px;
@@ -24,7 +24,7 @@
             height: 400px;
             display: block;
             margin: 0 auto;
-            box-shadow: 1px 1px 2px 3px rgb(83, 83, 83);
+            box-shadow: 1px 1px 5px 4px rgb(44, 43, 43);
             margin-top: 40px;
             margin-bottom: 40px;
         }
@@ -33,20 +33,48 @@
             width: 400px;
         }
         .btn1{
-            margin:auto;
-            border-radius: 15px;
+            margin-left:50px;
+            border-radius: 10px;
             font-size: 20px;
-            border:solid 5px;
+            border:solid 4px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .btn1:hover{
+            box-shadow: 1px 1px 5px 4px black;
+        }
+        .inputbar{
+            height: 35px;
+            width: 250px;
+            border-radius: 10px;
+            border:solid 2px rgb(63, 6, 6);
+            background-color: rgb(197, 195, 195);
+            color: rgb(54, 5, 5);
+            font-size: 20px ;
+            margin-top: 10px;
+        }
+        .img-info{
+            display: flex;
+        }
+        .arrow-btn{
+            height: 35px;
+            width: 85px;
         }
     </style>
 </head>
 <body>
+    
     <div class="img-card-container">
-    <div class="img-container"><img src="./dog-img/Dog-Pictures1.jpg" class="card-image" id="card-image"/> 
-        <button class="btn1" id="btn1" onclick="nextbtn1()">generate more</button></div>
+       <div class="img-container">
+        <img src="./dog-img/Dog-Pictures1.jpg" class="card-image" id="card-image"/> 
+        <div class="img-info"> 
+        <input type="text" placeholder="dogs" class="inputbar"/>
+        <button class="btn1"  onclick="nextbtn1()"><img src="btn-arrow.jpg" class="arrow-btn"/></button></div></div>
 
         <div class="img-container"><img src="./birds-img/bird1.jpg" class="card-image" id="card-image2"/> 
-        <button class="btn1" id="btn1" onclick="nextbtn2()">generate more</button></div>
+           <div class="img-info"> <input type="text" placeholder="dogs" class="inputbar"/>
+            <button class="btn1" onclick="nextbtn2()"><img src="btn-arrow.jpg" class="arrow-btn"/></button></div></div>
        
    </div>
      
